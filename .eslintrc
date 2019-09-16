@@ -1,0 +1,43 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "eslint-config-prettier"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype",
+    "eslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error"
+    ],
+    "flowtype/require-valid-file-annotation": [
+      2,
+      "always"
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
+    "no-underscore-dangle": [
+      1,
+      {
+        "allow": [
+          "__PRELOADED_STATE__"
+        ]
+      }
+    ],
+    "global-require": "off"
+  }
+}
